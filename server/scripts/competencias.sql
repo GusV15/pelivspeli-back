@@ -28,7 +28,3 @@ ALTER TABLE `competencia` ADD FOREIGN KEY (`director_id`) REFERENCES director(`i
 -- Se ejecuta para crear la FK que relaciona las tablas competencia y actor. 
 ALTER TABLE `competencia` ADD COLUMN `actor_id` int(11) unsigned;
 ALTER TABLE `competencia` ADD FOREIGN KEY (`actor_id`) REFERENCES actor(`id`);
-
-insert into `genero` (`nombre`) values ('Todos');
-insert into `director` (`nombre`) values ('Todos/as');
-insert into `actor` (`nombre`) values ('Todos/as');
